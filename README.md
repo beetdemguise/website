@@ -2,7 +2,7 @@
 My personal website
 
 # environment setup
-Install npm
+Install npm  
 1. Create .bash_profile in root directory if you don't have one  
 2. Install node via package manager (e.g. nvm)  
 3. To install nvm go to Terminal and run this command from root directory:  
