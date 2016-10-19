@@ -6,7 +6,7 @@ import sys
 import imp
 import subprocess
 
-## Python 2.6 subprocess.check_output compatibility. Thanks Greg Hewgill!
+# Python 2.6 subprocess.check_output compatibility. Thanks Greg Hewgill!
 if 'check_output' not in dir(subprocess):
     def check_output(cmd_args, *args, **kwargs):
         proc = subprocess.Popen(
@@ -18,9 +18,9 @@ if 'check_output' not in dir(subprocess):
         return out
     subprocess.check_output = check_output
 
-from setuptools import setup, find_packages
-from setuptools.command.test import test as TestCommand
-from distutils import spawn
+from setuptools import setup, find_packages   # noqa: E402
+from setuptools.command.test import test as TestCommand   # noqa: E402
+from distutils import spawn   # noqa: E402
 
 try:
     import colorama
@@ -34,7 +34,7 @@ except ImportError:
 # Add the current directory to the module search path.
 sys.path.insert(0, os.path.abspath('.'))
 
-## Constants
+# Constants
 CODE_DIRECTORY = 'server'
 DOCS_DIRECTORY = 'docs'
 TESTS_DIRECTORY = 'tests'
@@ -55,7 +55,7 @@ metadata = imp.load_source(
     'metadata', os.path.join(CODE_DIRECTORY, 'metadata.py'))
 
 
-## Miscellaneous helper functions
+# Miscellaneous helper functions
 
 def get_project_files():
     """Retrieve a list of project files, ignoring hidden files.
