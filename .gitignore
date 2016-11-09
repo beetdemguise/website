@@ -90,3 +90,6 @@ ENV/
 
 # Apple Files
 .DS_Store
+
+# Node files
+node_modules
