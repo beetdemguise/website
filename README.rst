@@ -41,8 +41,10 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | b
 ```bash
 source ~/.bashrc
 ```
-6. Run `nvm install node` in Terminal
-7. Run `nvm use node` in Terminal
+6. Run `nvm install node`
+7. Run `nvm use node`
+8. Run `cd website/path/here`
+9. Run `npm install`
 
 Localhost Usage
 ===============
